@@ -9,6 +9,7 @@ public class C03_SwitchingWindow extends TestBaseQuit {
 
     @Test
     public void test02(){
+        // amazon sayfasina gidelim
         driver.get("https://www.amazon.com");
         String wHDAmazon = driver.getWindowHandle();
         bekle(2);
