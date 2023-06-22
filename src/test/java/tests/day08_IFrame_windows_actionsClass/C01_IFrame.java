@@ -12,11 +12,13 @@ public class C01_IFrame extends TestBase {
     public void test01(){
         //1 ) https://the-internet.herokuapp.com/iframe adresine gidin.
         driver.get("https://the-internet.herokuapp.com/iframe");
+
         // 2 ) Bir metod olusturun: iframeTest
         // - “An IFrame containing….” textinin erisilebilir oldugunu test edin ve  konsolda yazdirin.
         WebElement textElement = driver.findElement(By.xpath("//*[text()='An iFrame containing the TinyMCE WYSIWYG Editor']"));
         Assert.assertTrue(textElement.isEnabled());
         System.out.println(textElement.getText());
+
         // - Text Box’a “Merhaba Dunya!” yazin.
 
         /*
