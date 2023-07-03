@@ -10,10 +10,12 @@ import java.util.List;
 
 public class C07_IFrame extends TestBaseQuit {
 
+
     @Test
     public void test01(){
         //1) http://demo.guru99.com/test/guru99home/ sitesine gidiniz
         driver.get("http://demo.guru99.com/test/guru99home/");
+
         //2) sayfadaki iframe sayısını bulunuz.
         int iFrameCount = driver.findElements(By.tagName("iframe")).size();
         System.out.println(iFrameCount);
@@ -26,8 +28,10 @@ public class C07_IFrame extends TestBaseQuit {
 
         driver.findElement(By.xpath("//button[@class='ytp-large-play-button ytp-button ytp-large-play-button-red-bg']")).click();
         bekle(3);
+
         //4) ilk iframe'den çıkıp ana sayfaya dönünüz
         driver.switchTo().defaultContent();
+
         //5) ikinci iframe'deki (Jmeter Made Easy) linke
         //(https://www.guru99.com/live-selenium-project.html) tıklayınız
 
