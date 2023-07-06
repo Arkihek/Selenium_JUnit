@@ -36,6 +36,7 @@ public class C02_DropdownMenu extends TestBase {
         String sonucSayisiStr = sonucYazisi.substring(0,sonucYazisi.indexOf(" ")); // "10"
 
         int sonucSayisiInt = Integer.parseInt(sonucSayisiStr); // int olarak 10
+        System.out.println(sonucSayisiInt);
         Assert.assertTrue(sonucSayisiInt>9);
         // sectigimiz opsiyonu yazdirin
 
